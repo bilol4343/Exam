@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart - A7 Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP HEADER -->
+<div class="top-header">
+    <div class="left">EN | USD</div>
+    <div class="right">
+        <span>My Profile</span>
+        <span id="cart-counter">Cart (0)</span>
+        <span>$0.00</span>
+        <span class="search">🔍</span>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">LOGO</div>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="cart.html">CART</a>
+    </nav>
+</header>
+
+<!-- CART TABLE -->
+<h2 class="section-title">Your Cart</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>QTY</th>
+            <th>Unit Price</th>
+        </tr>
+    </thead>
+    <tbody id="cart-items">
+        <!-- JS will populate cart items -->
+    </tbody>
+</table>
+
+<!-- CART SUMMARY -->
+<div id="cart-summary">
+    <p>Subtotal: $<span id="subtotal">0.00</span></p>
+    <p>Shipping Fee: $<span id="shipping">0.00</span></p>
+    <p>Discount: $<span id="discount">0.00</span></p>
+    <p><strong>Total: $<span id="total">0.00</span></strong></p>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
